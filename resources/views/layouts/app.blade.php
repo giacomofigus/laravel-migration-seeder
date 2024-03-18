@@ -5,16 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @vite('resources/css/app.css')
         @vite('resources/scss/app.scss')
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-
+        <title>@yield('title')</title>
     </head>
     <body>
-        <div class="">
-            <h1>Ciao Sass</h1>
-        </div>
+
+        @yield('main')
+
+        {{ dd($trains) }}
 
     </body>
 </html>
